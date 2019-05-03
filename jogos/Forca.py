@@ -92,7 +92,7 @@ def imprime_mensagem_perdedor(palavra_secreta):
 
 
 def carrega_palavra():
-    arquivo = open("frutas.txt", "r")
+    arquivo = open("./jogos/frutas.txt", "r")
     palavras = []
     for linha in arquivo:
         linha = linha.strip()
@@ -123,7 +123,6 @@ def marca_chute_correto(chute, letras_acertadas, palavra_secreta):
 
 
 def jogar():
-
     palavra_secreta = carrega_palavra()
     enforcou = False
     acertou = False
